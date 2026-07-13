@@ -48,21 +48,6 @@ nav a:hover{
     background:#4F7EFF;
 }
 
-@media(max-width:900px){
-
-    #container{
-        flex-direction:column;
-        height:auto;
-        padding:20px;
-    }
-
-    nav{
-        margin-top:20px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-}
 
 #home{
     width:100%;
@@ -564,6 +549,18 @@ nav a:hover{
 
     #right{
         background: none;
+    }
+
+    #container{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+    }
+
+    nav{
+        margin-top:20px;
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
     .button{

@@ -563,11 +563,12 @@ nav a:hover{
     #home{
         flex-direction: column;
         align-items: start;
-        
+        padding: 50px 20px;
     }
 
     #right{
         background: none;
+
     }
 
     #container{

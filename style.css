@@ -29,6 +29,15 @@
     line-height:28px;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
 nav{
     margin:0;
     display:flex;
@@ -560,6 +569,7 @@ nav a:hover{
 
 @media(max-width:900px){
 
+
     #home{
         flex-direction: column;
         align-items: start;
@@ -571,11 +581,50 @@ nav a:hover{
 
     }
 
-    #container{
-        flex-direction:column;
-        height:auto;
-        padding:15px;
+    #nama h2{
+        font-size: 17px;
     }
+
+    #container{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        height:70px;
+        padding:15px 20px;
+    }
+
+    /* Tombol hamburger */
+    .menu-toggle{
+        display: block;
+    }
+
+    /* Menu disembunyikan */
+    nav{
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #050816;
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 20px 20px;
+        border-top: 1px solid #1b2447;
+        z-index: 1000;
+    }
+
+    /* Menu ketika dibuka */
+    nav.active{
+        display: flex;
+    }
+
+    nav a{
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        margin-top: 5px;
+    }    
 
     nav{
         margin-top:20px;
